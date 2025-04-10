@@ -6,7 +6,7 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 18:32:14 by qliso             #+#    #+#             */
-/*   Updated: 2025/04/04 19:27:33 by qliso            ###   ########.fr       */
+/*   Updated: 2025/04/10 12:12:58 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,11 @@ int	main()
 	me.name = "Didier";
 	me.age = 10;
 	me.dog = true;
-	std::cout << "First ptr address : " << &me << std::endl;
+	std::cout << "First ptr address in hex : " << &me << std::endl;
 	displayData(&me);
 	
 	uintptr_t	me_serialized = Serializer::serialize(&me);
-	std::cout << "Second ptr address in hex : 0x" << std::hex << me_serialized << std::endl;
-	std::cout << "Second ptr address in dec : " << std::dec << me_serialized << std::endl;
+	std::cout << "Serialized ptr in hex : 0x" << std::hex << me_serialized << std::dec << std::endl;
 	
 	Data	*me_bis = Serializer::deserialize(me_serialized);
 	displayData(me_bis);

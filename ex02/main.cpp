@@ -6,7 +6,7 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 19:44:16 by qliso             #+#    #+#             */
-/*   Updated: 2025/04/04 20:14:50 by qliso            ###   ########.fr       */
+/*   Updated: 2025/04/10 12:19:09 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ void	identify(Base& p)
 	{
 		A&	a = dynamic_cast<A&>(p);
 		std::cout << "Object instantiated is of type A" << std::endl;
+		static_cast<void>(a);
 	}
 	catch (std::exception &e)
 	{
@@ -76,6 +77,7 @@ void	identify(Base& p)
 	{
 		B&	b = dynamic_cast<B&>(p);
 		std::cout << "Object instantiated is of type B" << std::endl;
+		static_cast<void>(b);
 	}
 	catch (std::exception &e)
 	{
@@ -86,6 +88,7 @@ void	identify(Base& p)
 	{
 		C&	c = dynamic_cast<C&>(p);
 		std::cout << "Object instantiated is of type C" << std::endl;
+		static_cast<void>(c);
 	}
 	catch (std::exception &e)
 	{

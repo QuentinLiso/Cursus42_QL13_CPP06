@@ -6,12 +6,12 @@
 #    By: qliso <qliso@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/03 19:08:13 by qliso             #+#    #+#              #
-#    Updated: 2025/04/04 18:10:22 by qliso            ###   ########.fr        #
+#    Updated: 2025/04/10 12:00:14 by qliso            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # VARIABLES
-NAME	=	./cpp06_ex00
+NAME	=	./convert
 
 SRCS	=	$(addsuffix .cpp, \
 			main \

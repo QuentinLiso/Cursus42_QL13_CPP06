@@ -6,7 +6,7 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 19:24:39 by qliso             #+#    #+#             */
-/*   Updated: 2025/04/04 18:14:32 by qliso            ###   ########.fr       */
+/*   Updated: 2025/04/10 12:01:37 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ class	ScalarConverter
 		static void	convertToChar(int i);
 		static void	convertToChar(float f);
 		static void	convertToChar(double d);
-	
 		static void	convertToInt(double d);
 		static void	convertToFloat(double d);
 

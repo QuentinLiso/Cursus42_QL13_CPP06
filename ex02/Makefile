@@ -6,7 +6,7 @@
 #    By: qliso <qliso@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/04 19:37:00 by qliso             #+#    #+#              #
-#    Updated: 2025/04/04 19:51:18 by qliso            ###   ########.fr        #
+#    Updated: 2025/04/10 12:13:14 by qliso            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJS_PATH	=	.objs/
 OBJS		=	$(SRCS:%.c=$(OBJS_PATH)%.o)
 
 CC			=	c++
-CPPFLAGS	=	-Wall -Wextra -Wno-unused -Werror -std=c++98
+CPPFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM			=	rm -rf
 
 #RULES
